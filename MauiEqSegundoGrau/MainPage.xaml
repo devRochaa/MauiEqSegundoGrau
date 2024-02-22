@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiEqSegundoGrau.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label Text="Calculadora de Equações de Segundo Grau."
+       FontSize="Large"
+       FontAttributes="Bold"
+       HorizontalTextAlignment="Center"/>
+            <Label Text="Valor de A"/>
+            <Entry x:Name="txt_n1"/>
+
+            <Label Text="Valor de B"/>
+            <Entry x:Name="txt_n2"/>
+
+            <Label Text="Valor de C"/>
+            <Entry x:Name="txt_n3"/>
+
+            <Button Text="Fazer Equação" Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
